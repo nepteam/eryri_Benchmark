@@ -15,7 +15,7 @@ Types of tests
 ===================
 Simple HTML Test: Simple short HTML page with text stating "Welcome to Raspberry Pi Test page" (80 bytes) 
 
-PHP test : A series of processes consisting of 
+PHP and Python test : A series of processes consisting of 
 
 1. randomly generating an array of 1000 numbers 
 
@@ -54,6 +54,11 @@ Results
 |Lighttpd_Images (20 jpg images)|	554|	0|	1234|	0.01%|
 |Lighttpd_Large text (1mb)|	1173|	196|	2624|	0%|
 |Lighttpd_PHP MySQL (Read one record)|	115|	10|	3149|	0%|
+|Django HTML Request|	620|	2|	15270|	0.001%|
+|Django Images |	25489|	681|	46166|	0%|
+|Django Text |	5140|	536|	22937|	0%|
+|Django Python|	80224|	25229|	92893|	0%|
+
 				
 				
 |Heavy use (100 concurrent users)|	Average (ms)	|Min (ms) |	Max (ms) |	Error|
@@ -68,7 +73,13 @@ Results
 |Lighttpd_PHP (Various processing & Calculations)|	25668|	1189|	26595|	0%|
 |Lighttpd_Images (20 jpg images)|	5698|	0|	7882|	17.40%|
 |Lighttpd_Large text (1mb)|	12493|	237|	25506|	0%|
-|Lighttpd_PHP MySQL (Read one record)|	1125|	21|	1680|	0%|
+|Lighttpd_PHP MySQL (Read one record)|	1125|	21|	0%|
+|Django HTML Request|	6181|	49|	18159|	0%|
+|Django Images |25489|	681|	46166|	0%|
+|Django Text |	51788|	1593|	71094|	0%|
+|Django Python|	599691|	20027|	776209|	92.6%|
+
+
 
 
 
